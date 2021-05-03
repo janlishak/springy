@@ -1,0 +1,7 @@
+[
+  {
+    "id": "hello-world",
+    "execute-command": "/home/user/scripts/hello.sh",
+    "command-working-directory": "/home/user/webhook"
+  }
+]
