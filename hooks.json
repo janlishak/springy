@@ -1,8 +1,8 @@
 [
   {
     "id": "deploy-from-git",
-    "execute-command": "/root/springy/deploy.sh",
-    "command-working-directory": "/root/springy",
+    "execute-command": "/opt/springy/deploy.sh",
+    "command-working-directory": "/opt/springy",
     "trigger-rule":
     {
       "and":
@@ -36,7 +36,7 @@
   },
   {
     "id": "hello-world",
-    "execute-command": "/home/user/scripts/hello.sh",
-    "command-working-directory": "/home/user/webhook"
+    "execute-command": "/opt/springy/test.sh",
+    "command-working-directory": "/opt/springy"
   }
 ]
