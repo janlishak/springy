@@ -1,8 +1,8 @@
 [
   {
     "id": "deploy-from-git",
-    "execute-command": "/home/jan/projects/nrr/deploy.sh",
-    "command-working-directory": "/home/jan/projects/nrr",
+    "execute-command": "/root/springy/deploy.sh",
+    "command-working-directory": "/root/springy",
     "trigger-rule":
     {
       "and":
@@ -23,7 +23,7 @@
           "match":
           {
             "type": "value",
-            "value": "refs/heads/master",
+            "value": "refs/heads/main",
             "parameter":
             {
               "source": "payload",
@@ -33,5 +33,10 @@
         }
       ]
     }
+  },
+  {
+    "id": "hello-world",
+    "execute-command": "/home/user/scripts/hello.sh",
+    "command-working-directory": "/home/user/webhook"
   }
 ]
